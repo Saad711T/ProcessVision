@@ -1,0 +1,4 @@
+<Project Sdk="Microsoft.NET.Sdk">
+ <PropertyGroup><OutputType>Exe</OutputType><TargetFramework>net9.0-windows</TargetFramework><Nullable>enable</Nullable><ImplicitUsings>enable</ImplicitUsings></PropertyGroup>
+ <ItemGroup><Compile Include="../Models/ProcessEntry.cs" Link="ProcessEntry.cs"/><Compile Include="../Services/ProcessMonitor.cs" Link="ProcessMonitor.cs"/><Compile Include="../Services/HistoryStore.cs" Link="HistoryStore.cs"/><Compile Include="../Services/PublisherReader.cs" Link="PublisherReader.cs"/></ItemGroup>
+</Project>
