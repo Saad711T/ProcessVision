@@ -1,3 +1,3 @@
 using System.Windows;
-namespace ProcessesVision;
+namespace ProcessVision;
 public partial class App : Application { }

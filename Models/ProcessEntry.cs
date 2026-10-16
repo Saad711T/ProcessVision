@@ -1,4 +1,4 @@
-namespace ProcessesVision.Models;
+namespace ProcessVision.Models;
 
 public sealed record ProcessEntry(string Name, int ProcessId, int ParentId, DateTime StartedAt, string ExecutablePath, string Source)
 {

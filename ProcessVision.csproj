@@ -6,7 +6,7 @@
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <ApplicationManifest>app.manifest</ApplicationManifest>
-    <AssemblyName>ProcessesVision</AssemblyName>
+    <AssemblyName>ProcessVision</AssemblyName>
     <Version>1.0.0</Version>
   </PropertyGroup>
   <ItemGroup><Compile Remove="tests/**/*.cs"/><Page Remove="tests/**/*.xaml"/></ItemGroup>

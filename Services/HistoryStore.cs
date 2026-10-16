@@ -1,12 +1,12 @@
 using System.IO;
 using System.Text.Json;
-using ProcessesVision.Models;
-namespace ProcessesVision.Services;
+using ProcessVision.Models;
+namespace ProcessVision.Services;
 
 public sealed class HistoryStore
 {
     private readonly string _path;
-    public HistoryStore(string? path = null) => _path = path ?? Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "ProcessesVision", "history.json");
+    public HistoryStore(string? path = null) => _path = path ?? Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "ProcessVision", "history.json");
     public IReadOnlyList<ProcessEntry> Load()
     {
         if (!File.Exists(_path)) return [];

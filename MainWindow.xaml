@@ -1,9 +1,9 @@
-<Window x:Class="ProcessesVision.MainWindow" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
- Title="ProcessesVision" Width="820" Height="610" MinWidth="660" MinHeight="500" WindowStartupLocation="CenterScreen" Background="White" FontFamily="Dubai, Segoe UI" FontSize="14" FlowDirection="LeftToRight" Language="en-US">
+<Window x:Class="ProcessVision.MainWindow" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+ Title="ProcessVision" Width="820" Height="610" MinWidth="660" MinHeight="500" WindowStartupLocation="CenterScreen" Background="White" FontFamily="Dubai, Segoe UI" FontSize="14" FlowDirection="LeftToRight" Language="en-US">
  <Grid Margin="18,14,18,12">
   <Grid.RowDefinitions><RowDefinition Height="Auto"/><RowDefinition Height="Auto"/><RowDefinition Height="*"/><RowDefinition Height="Auto"/><RowDefinition Height="Auto"/></Grid.RowDefinitions>
   <StackPanel Margin="0,0,0,14">
-   <TextBlock Text="ProcessesVision" FontSize="23" FontWeight="Medium"/>
+   <TextBlock Text="ProcessVision" FontSize="23" FontWeight="Medium"/>
    <TextBlock Text="Last 10 process starts" Foreground="#656565"/>
   </StackPanel>
   <DockPanel Grid.Row="1" Margin="0,0,0,12">

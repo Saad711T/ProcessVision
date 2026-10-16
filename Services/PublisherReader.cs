@@ -1,7 +1,7 @@
 using System.Diagnostics;
 using System.IO;
 
-namespace ProcessesVision.Services;
+namespace ProcessVision.Services;
 
 public static class PublisherReader
 {

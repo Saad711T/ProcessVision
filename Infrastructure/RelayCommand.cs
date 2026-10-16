@@ -1,5 +1,5 @@
 using System.Windows.Input;
-namespace ProcessesVision.Infrastructure;
+namespace ProcessVision.Infrastructure;
 public sealed class RelayCommand(Action execute) : ICommand
 {
     public bool CanExecute(object? parameter) => true;

@@ -1,6 +1,6 @@
 using System.Windows;
-using ProcessesVision.ViewModels;
-namespace ProcessesVision;
+using ProcessVision.ViewModels;
+namespace ProcessVision;
 public partial class MainWindow : Window
 {
     private readonly MainViewModel _viewModel;

@@ -1,7 +1,7 @@
 using System.Collections.Concurrent;
 using System.Diagnostics;
-using ProcessesVision.Models;
-using ProcessesVision.Services;
+using ProcessVision.Models;
+using ProcessVision.Services;
 
 if (args.Contains("--hold")) { Thread.Sleep(3000); return; }
 

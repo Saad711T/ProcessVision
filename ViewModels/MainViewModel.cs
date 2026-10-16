@@ -6,10 +6,10 @@ using System.Windows;
 using System.Windows.Data;
 using System.Windows.Input;
 using Microsoft.Win32;
-using ProcessesVision.Infrastructure;
-using ProcessesVision.Models;
-using ProcessesVision.Services;
-namespace ProcessesVision.ViewModels;
+using ProcessVision.Infrastructure;
+using ProcessVision.Models;
+using ProcessVision.Services;
+namespace ProcessVision.ViewModels;
 
 public sealed class MainViewModel : ObservableObject, IDisposable
 {
@@ -85,7 +85,7 @@ public sealed class MainViewModel : ObservableObject, IDisposable
             Application.Current.Shutdown();
         }
         catch (Win32Exception ex) when (ex.NativeErrorCode == 1223) { Notice = "Full monitoring was cancelled. Standard monitoring continues."; }
-        catch (Exception ex) when (ex is Win32Exception or InvalidOperationException) { Notice = "Could not restart. Right-click ProcessesVision and choose Run as administrator."; }
+        catch (Exception ex) when (ex is Win32Exception or InvalidOperationException) { Notice = "Could not restart. Right-click ProcessVision and choose Run as administrator."; }
     }
     private void RefreshCounts() { Notify(nameof(CountLabel)); Notify(nameof(SessionCount)); Notify(nameof(LatestTime)); Notify(nameof(EmptyText)); }
     private void Clear()
@@ -105,7 +105,7 @@ public sealed class MainViewModel : ObservableObject, IDisposable
     }
     private void Export()
     {
-        var dialog = new SaveFileDialog { Filter = "CSV (*.csv)|*.csv", FileName = $"ProcessesVision-{DateTime.Now:yyyyMMdd-HHmmss}.csv" };
+        var dialog = new SaveFileDialog { Filter = "CSV (*.csv)|*.csv", FileName = $"ProcessVision-{DateTime.Now:yyyyMMdd-HHmmss}.csv" };
         if (dialog.ShowDialog() != true) return;
         try
         {

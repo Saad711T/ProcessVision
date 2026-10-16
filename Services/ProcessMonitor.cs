@@ -1,7 +1,7 @@
 using System.Diagnostics;
 using System.Runtime.InteropServices;
-using ProcessesVision.Models;
-namespace ProcessesVision.Services;
+using ProcessVision.Models;
+namespace ProcessVision.Services;
 
 /// <summary>WMI runs on one background MTA thread; no COM objects cross threads.</summary>
 public sealed class ProcessMonitor : IDisposable
